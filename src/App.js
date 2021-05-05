@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfileComp from './profile/profileComp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{color:'white', backgroundColor:'black'}}>
+       <ProfileComp fullName="Meyssa Slama" bio="I love cats" profession="student">
+         <img style={{height:'290px' , width :'250px' , textAlign : 'center', marginBottom:'20px'}} src="/images/mahleni.png" alt="this is my pic" />
+       </ProfileComp>
     </div>
   );
 }
